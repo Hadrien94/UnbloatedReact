@@ -6,9 +6,15 @@ import './intro.css';
 
 const Intro = () => {
   return (
+
     <section id="about">
-      <h5>Get to know</h5>
-      <h2>About Me</h2>
+      <div class="bandeau"></div>
+      <h2> Portfolio professionnel</h2>
+      <h5> Passionné de user experience, de marketing, et luxe. <br></br>Ce portfolio est la vitrine de mon expérience professsionelle au cours de mes 5 ans d'expériences en agence. 
+      <hr></hr><br></br><br></br>DISCLAIMER <hr></hr><br></br>Site utilisé à des fins de présentations non commerciales, droits réservés aux agences citées</h5>
+      <p></p>
+      
+      <div className="spacing"></div>
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
@@ -19,20 +25,21 @@ const Intro = () => {
           <div className="about__cards">
             <article className="about__card">
               <FaAward className="about__icon" />
-              <h5>Experience</h5>
-              <small>1 year</small>
+              <h5>Expérience</h5>
+              <small>5 ans</small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
-              <h5>Projects</h5>
-              <small>20+ Completed Projects</small>
+              <h5>Projets</h5>
+              <small>web / UX & UI / Design</small>
             </article>
           </div>
-          <p>I’ve spent the last several months in a remote environment, working with HTML, CSS, JavaScript, building everything from landing pages to APIs. My experience as a teacher in an international school helped me collaborate with fellow developers from all over the world. Additionally, working with kids isn’t an easy task, however, it has helped me become efficient, productive, and fast even in a very stressful environment, which is an important skill in the tech industry.</p>
-          <a href="#contact" className="btn btn-primary">Let's Talk</a>
+          <div className='spacing'></div>
+          <a href="#contact" className="btn btn-primary">Prenons un café</a>
         </div>
       </div>
     </section>
+
   )
 }
 

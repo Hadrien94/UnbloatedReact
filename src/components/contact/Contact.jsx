@@ -29,44 +29,49 @@ const Contact = () => {
   };
   return (
     <section id="contact">
-      <h5>Get In Touch</h5>
+      <h5>Un projet, une question ?</h5>
       <h5>
-        I do receive your messages and will respond asap if the valid email is
-        provided :)
+        Envoyez-moi, un message et je vous réponds le plus vite possible 
       </h5>
-      <h2>Contact Me</h2>
+      <h2>Contact</h2>
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
             <MdOutlineEmail className="contact__option-icon" />
-            <h4>Email</h4>
-            <h5>mekomerikomg@gmail.com</h5>
-            <a href="mailto:mekomerikomg@gmail.com">Send a message</a>
+            <h4>Email & téléphone</h4>
+            <h5>hpoulenc@gmail.com | 07 67 09  77 09</h5>
+            <a href="mailto:hpoulenc@gmail.com">Envoyer un message</a>
           </article>
         </div>
         <form ref={formRef} onSubmit={handleSubmit}>
           <input
             type="text"
-            placeholder="Your Full Name"
+            placeholder="Votre Nom"
             name="user_name"
             required
           />
           <input
             type="text"
-            placeholder="Your Email"
+            placeholder="Votre Prénom"
+            name="user_name"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Votre Email"
             name="user_email"
             required
           />
           <textarea
-            placeholder="Your message"
+            placeholder="Votre message"
             rows="7"
             name="message"
             required
           ></textarea>
           <button type="submit" className="btn btn-primary">
-            Send Message
+            Envoyer message
           </button>
-          {message && <span>Thanks, I'll reply ASAP :)</span>}
+          {message && <span>Merci, je vous réponds sous 24H</span>}
         </form>
       </div>
     </section>
